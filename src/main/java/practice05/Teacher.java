@@ -1,7 +1,7 @@
 package practice05;
 
 public class Teacher extends Person{
-    private int klass = -1;
+    private Integer klass = null;
 
     public int getKlass() {
         return klass;
@@ -17,6 +17,6 @@ public class Teacher extends Person{
     }
 
     public String introduce(){
-        return  this.klass != -1? super.introduce() + " I am a Teacher. I teach Class " + klass + "." : super.introduce() + " I am a Teacher. I teach No Class." ;
+        return  this.klass != null? super.introduce() + " I am a Teacher. I teach Class " + klass + "." : super.introduce() + " I am a Teacher. I teach No Class." ;
     }
 }
