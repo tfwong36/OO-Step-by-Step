@@ -1,6 +1,6 @@
 package practice06;
 
-public class Teacher  extends Person {
+public class Teacher extends Person {
     private Klass klass;
 
     public Klass getKlass() {
