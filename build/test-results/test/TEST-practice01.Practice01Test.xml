@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="practice01.Practice01Test" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-12-01T09:14:20" hostname="WONGJA7-W10" time="0.051">
+  <properties/>
+  <testcase name="should_person_have_an_introduce_method_which_introduce_person_with_name_and_age()" classname="practice01.Practice01Test" time="0.051"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

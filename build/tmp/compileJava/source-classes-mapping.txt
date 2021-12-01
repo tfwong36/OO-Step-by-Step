@@ -1,0 +1,64 @@
+practice10/Student.java
+ practice10.Student
+practice03/Worker.java
+ practice03.Worker
+practice06/Klass.java
+ practice06.Klass
+practice04/Worker.java
+ practice04.Worker
+practice09/Klass.java
+ practice09.Klass
+practice10/Person.java
+ practice10.Person
+practice04/Person.java
+ practice04.Person
+practice05/Person.java
+ practice05.Person
+practice10/Klass.java
+ practice10.Klass
+practice01/Person.java
+ practice01.Person
+practice08/Klass.java
+ practice08.Klass
+practice09/Student.java
+ practice09.Student
+practice02/Person.java
+ practice02.Person
+practice03/Person.java
+ practice03.Person
+practice08/Student.java
+ practice08.Student
+practice06/Student.java
+ practice06.Student
+practice05/Student.java
+ practice05.Student
+practice04/Student.java
+ practice04.Student
+practice07/Student.java
+ practice07.Student
+practice08/Person.java
+ practice08.Person
+practice02/Student.java
+ practice02.Student
+practice05/Teacher.java
+ practice05.Teacher
+practice06/Person.java
+ practice06.Person
+practice07/Person.java
+ practice07.Person
+practice03/Student.java
+ practice03.Student
+practice08/Teacher.java
+ practice08.Teacher
+practice09/Teacher.java
+ practice09.Teacher
+practice06/Teacher.java
+ practice06.Teacher
+practice07/Klass.java
+ practice07.Klass
+practice10/Teacher.java
+ practice10.Teacher
+practice07/Teacher.java
+ practice07.Teacher
+practice09/Person.java
+ practice09.Person
