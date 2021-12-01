@@ -16,6 +16,10 @@ public class Person {
         this.age = age;
     }
 
+    public boolean equals(Object obj){
+        return this.id==((Person)obj).getId();
+    }
+
     public String getName() {
         return name;
     }

@@ -24,7 +24,7 @@ public class Practice07Test {
     public void should_person_with_same_id_be_same_one() throws Exception {
         Person person1 = new Person(1, "Tom", 21);
         Person person2 = new Person(1, "Tom", 21);
-        assertThat(person1.getId()).isEqualTo(person2.getId());
+        assertThat(person1).isEqualTo(person2);
     }
 
     @Test

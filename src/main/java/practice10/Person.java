@@ -11,6 +11,9 @@ public class Person {
         this.age = age;
     }
 
+    public boolean equals(Object obj){
+        return this.id==((Person)obj).getId();
+    }
     public Person(String name, int age) {
         this.name = name;
         this.age = age;

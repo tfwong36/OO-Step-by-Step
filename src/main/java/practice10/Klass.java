@@ -41,14 +41,16 @@ public class Klass {
             System.out.printf("It is not one of us.\n");
         else{
             this.leader = student;
-            this.getTeacher().printStudentBecomeLeader(student, this.getNumber());
+            if (this.getTeacher() != null)
+                this.getTeacher().printStudentBecomeLeader(student, this.getNumber());
         }
     }
 
     public void appendMember(Student student){
         if (!members.contains(student)){
             members.add(student);
-            this.getTeacher().printStudentJoin(student, this.getNumber());
+            if (this.getTeacher() != null)
+                this.getTeacher().printStudentJoin(student, this.getNumber());
         }
     }
 
