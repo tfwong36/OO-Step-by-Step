@@ -1,11 +1,9 @@
 package practice06;
 
-import practice05.Person;
-
 public class Teacher  extends Person {
-    private int klass = -1;
+    private Klass klass;
 
-    public int getKlass() {
+    public Klass getKlass() {
         return klass;
     }
 
@@ -13,16 +11,20 @@ public class Teacher  extends Person {
         super(name, age);
     }
 
-    public Teacher(String name, int age, int klass) {
+    public Teacher(String name, int age, Klass klass) {
         super(name, age);
         this.klass = klass;
     }
 
     public String introduce(){
-        return this.klass != -1? super.introduce() + " I am a Teacher. I teach Class " + klass + "." : super.introduce() + " I am a Teacher. I teach No Class." ;
+        return this.klass != null? super.introduce() + " I am a Teacher. I teach Class " + klass.getNumber() + "." : super.introduce() + " I am a Teacher. I teach No Class." ;
     }
-//
-//    public String introduceWith(Student student){
-//
-//    }
+
+    public String introduceWith(Student student){
+        if (student.getKlass().getNumber() == this.klass.getNumber())
+            return String.format("My name is %s. I am %d years old. I am a Teacher. I teach %s.", this.getName(), this.getAge(), student.getName());
+        else
+            return String.format("My name is %s. I am %d years old. I am a Teacher. I don't teach %s.", this.getName(), this.getAge(), student.getName());
+    }
+
 }
