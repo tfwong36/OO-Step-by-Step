@@ -3,9 +3,9 @@ package practice09;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Teacher  extends Person {
-    //#todo remove unused klass, and related methods
     LinkedList<Klass> Classes = null;
 
     public LinkedList<Klass> getClasses() {
@@ -24,36 +24,20 @@ public class Teacher  extends Person {
     public String introduce() {
         String outputString = " I am a Teacher. I teach Class ";
         if (Classes != null){
-            String teachingClass = "";
-            //#todo replace by stream api
-            for (Klass klass : this.Classes) {
-                teachingClass += klass.getNumber() + ", ";
-            }
-            teachingClass = teachingClass.substring(0, teachingClass.length() - 2); //remove last two ', '
+            String teachingClass = Classes.stream().map(e -> String.valueOf(e.getNumber())).collect(Collectors.joining(", "));
             return super.introduce() + outputString + teachingClass + ".";
         }
         return super.introduce() + " I am a Teacher. I teach No Class.";
     }
 
     public String introduceWith(Student student) {
-        boolean result = false;
         String outputString = super.introduce() + " I am a Teacher.";
-        if (Classes != null) {
-            if (this.isTeaching(student))
+        if (Classes != null && this.isTeaching(student))
                 return String.format(outputString + " I teach %s.", student.getName());
-        }
         return String.format(outputString + " I don't teach %s.", student.getName());
     }
 
     public boolean isTeaching(Student student){
-        if (Classes != null) {
-            //#todo replace by stream api
-            List<Integer> teachingClass = new ArrayList<>();
-            for (Klass klass : this.Classes) {
-                teachingClass.add(klass.getNumber());
-            }
-            return teachingClass.contains(student.getKlass().getNumber());
-        }
-        return false;
+        return Classes != null && Classes.stream().anyMatch(x -> x.getNumber() == student.getKlass().getNumber());
     }
 }
