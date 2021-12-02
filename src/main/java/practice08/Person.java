@@ -1,5 +1,7 @@
 package practice08;
 
+import java.util.Objects;
+
 public class Person {
     private String name;
     private int age;
@@ -16,9 +18,19 @@ public class Person {
         this.age = age;
     }
 
-    public boolean equals(Object obj){
-        return this.id==((Person)obj).getId();
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return id == person.id;
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
+
     public String getName() {
         return name;
     }

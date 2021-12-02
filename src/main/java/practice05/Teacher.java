@@ -16,7 +16,9 @@ public class Teacher extends Person{
         this.klass = klass;
     }
 
+    @Override
     public String introduce(){
-        return  this.klass != null? super.introduce() + " I am a Teacher. I teach Class " + klass + "." : super.introduce() + " I am a Teacher. I teach No Class." ;
+        String outputString = super.introduce() + " I am a Teacher. I teach Class ";
+        return  this.klass != null? outputString + klass + "." : outputString + " No Class." ;
     }
 }
