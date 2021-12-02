@@ -1,2 +1,20 @@
+practice07/Practice07Test.java
+ practice07.Practice07Test
+practice04/Practice04Test.java
+ practice04.Practice04Test
+practice03/Practice03Test.java
+ practice03.Practice03Test
+practice06/Practice06Test.java
+ practice06.Practice06Test
+practice02/Practice02Test.java
+ practice02.Practice02Test
 practice01/Practice01Test.java
  practice01.Practice01Test
+practice05/Practice05Test.java
+ practice05.Practice05Test
+practice08/Practice08Test.java
+ practice08.Practice08Test
+practice10/Practice10Test.java
+ practice10.Practice10Test
+practice09/Practice09Test.java
+ practice09.Practice09Test

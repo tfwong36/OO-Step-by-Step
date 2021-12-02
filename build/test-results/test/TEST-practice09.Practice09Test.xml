@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="practice09.Practice09Test" tests="17" skipped="0" failures="0" errors="0" timestamp="2021-12-02T02:11:13" hostname="WONGJA7-W10" time="0.072">
+  <properties/>
+  <testcase name="should_teacher_isTeaching_return_false_when_the_student_is_not_in_all_the_classes_the_teacher_teaches()" classname="practice09.Practice09Test" time="0.052"/>
+  <testcase name="should_student_have_name_age_and_class_number()" classname="practice09.Practice09Test" time="0.004"/>
+  <testcase name="should_teacher_have_name_and_age_and_classes()" classname="practice09.Practice09Test" time="0.0"/>
+  <testcase name="should_teacher_introduce_a_student_it_teaches()" classname="practice09.Practice09Test" time="0.0"/>
+  <testcase name="should_teacher_isTeaching_return_true_when_the_student_is_in_any_classes_the_teacher_teaches()" classname="practice09.Practice09Test" time="0.0"/>
+  <testcase name="should_person_have_id_name_and_age()" classname="practice09.Practice09Test" time="0.001"/>
+  <testcase name="should_teacher_introduce_itself_with_which_classes_it_teaches()" classname="practice09.Practice09Test" time="0.001"/>
+  <testcase name="should_class_assign_a_member_student_as_leader()" classname="practice09.Practice09Test" time="0.001"/>
+  <testcase name="should_teacher_introduce_itself_with_no_class_teaching()" classname="practice09.Practice09Test" time="0.001"/>
+  <testcase name="should_teacher_introduce_a_student_it_does_not_teach()" classname="practice09.Practice09Test" time="0.001"/>
+  <testcase name="should_person_with_same_id_be_same_one()" classname="practice09.Practice09Test" time="0.001"/>
+  <testcase name="should_class_get_display_name()" classname="practice09.Practice09Test" time="0.001"/>
+  <testcase name="should_student_introduce_itself_as_class_leader()" classname="practice09.Practice09Test" time="0.001"/>
+  <testcase name="should_person_have_an_introduce_method_which_introduce_person_with_name_and_age()" classname="practice09.Practice09Test" time="0.0"/>
+  <testcase name="should_class_not_assign_a_student_as_leader_when_student_is_not_a_member()" classname="practice09.Practice09Test" time="0.001"/>
+  <testcase name="should_student_introduce_with_class()" classname="practice09.Practice09Test" time="0.001"/>
+  <testcase name="should_class_have_a_number()" classname="practice09.Practice09Test" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
